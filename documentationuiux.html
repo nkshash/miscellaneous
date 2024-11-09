@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="hh.png">
+<title>Vita | Webapp documentation</title>
+<meta name="description" content="This is Vita webapp documentation">
+<meta name="author" content="shashank mishra">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+
+<style>
+  pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+            color:green;
+        }
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="hh.png" alt="Vita" style="width:50px;height:auto"/> </a> 
+		<span class="text-2 text-light ml-2">VITA</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a  href="index.html">Other Documentations</a></li>
+            <li><a target="_blank" href="https://vita-latest.onrender.com/">Vita WebApp</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="https://github.com/nkshash/nkshash" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+         
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+          
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#database">Databases</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#database1">User Collection</a></li>
+			<li class="nav-item"><a class="nav-link" href="#database2">Feedback Collection</a></li>
+			<li class="nav-item"><a class="nav-link" href="#database3">Comment Collection</a></li>
+			<li class="nav-item"><a class="nav-link" href="#database4">Prediction Collection</a></li>
+			<li class="nav-item"><a class="nav-link" href="#database5">UserChat History</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#api">API Documentation</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#dataapi">Database Configuration</a></li>
+            <li class="nav-item"><a class="nav-link" href="#emailapi">Email Configuration</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fireapi">Firebase Configuration</a></li>
+			<li class="nav-item"><a class="nav-link" href="#cloudapi">Cloudinary API</a></li>
+            <li class="nav-item"><a class="nav-link" href="#modalapi">Modal API</a></li>
+			<li class="nav-item"><a class="nav-link" href="#watsonapi">Watsonx Assistant API</a></li>
+          </ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_image">UI/UX Documentation</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#landing">Landing Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#login">Login Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#register">Registration Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home">Home Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#newchat">New Chat Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#history">History Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#profile">Profile Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutus">About Us Page</a></li>
+          </ul>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_video">WebApp Video</a></li>
+        
+		
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Documentation</h1>
+        <h2>This is the VITA (Virtual Interactive Treatment Advisor) documentation on UI-UX and database documentation.</h2>
+        <p class="lead"></p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Version:</strong> 1.0</li>
+					<li><strong>Author:</strong> <a href="https://chic-sherbet-f73d06.netlify.app/" target="_blank">Shashank Mishra</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Created:</strong> 8 August, 2024</li>
+					<li><strong>Update:</strong> 10 August, 2024</li>
+				</ul>
+			</div>
+		</div>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://vita-latest.onrender.com/">Item Support Page</a>.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+       
+		
+		<!-- Layout
+		============================ -->
+        <section id="database">
+          <h2>Database Documentation - Detailed</h2>
+          <p class="lead mb-5">This document provides an in-depth description of each database collection used in the application.</p>
+        </section>
+		
+		
+        <!-- Header
+		============================ -->
+        <section id="database1">
+          
+  
+          <h3>1. User Collection</h3>
+          <div class="details">
+              <p><strong>Purpose:</strong> The User collection stores account information for each registered user. It contains personal details and preferences.</p>
+              <p><strong>Fields:</strong></p>
+              <ul>
+                  <li><code>_id</code>: Unique identifier for the user document.</li>
+                  <li><code>first_name</code>: User's first name.</li>
+                  <li><code>last_name</code>: User's last name.</li>
+                  <li><code>username</code>: Chosen username for the account.</li>
+                  <li><code>email</code>: User's email address, used as a unique identifier.</li>
+                  <li><code>gender</code>: User's gender.</li>
+                  <li><code>password</code>: Hashed password for authentication.</li>
+                  <li><code>active</code>: Indicates whether the account is active.</li>
+                  <li><code>illness</code>, <code>allergies</code>, <code>medication</code>: Additional health-related details.</li>
+                  <li><code>profile_picture</code>: URL of the user's profile picture.</li>
+              </ul>
+              <pre>
+  {
+      "_id": "66e3339855827b77961981c0",
+      "first_name": "Shashank",
+      "last_name": "Mishra",
+      "username": "shawshank",
+      "email": "abc@gmail.com",
+      "gender": "Male",
+      "password": "pbkdf2:sha256:600000$...",
+      "active": true,
+      "illness": "NA",
+      "allergies": "NA",
+      "medication": "NA",
+      "profile_picture": "http://res.cloudinary.com/.../nav5pwd5i..."
+  }
+              </pre>
+          </div>
+        </section>
+		
+        <hr class="divider">
+        
+            <!-- Footer
+        ============================ -->
+            <section id="database2">
+  
+          <h3>2. Feedback Collection</h3>
+          <div class="details">
+              <p><strong>Purpose:</strong> Captures feedback from users about their experience with the application.</p>
+              <p><strong>Fields:</strong></p>
+              <ul>
+                  <li><code>_id</code>: Unique identifier for each feedback entry.</li>
+                  <li><code>email</code>: Email of the user providing feedback.</li>
+                  <li><code>csat</code>: Customer Satisfaction rating (1–5).</li>
+                  <li><code>feedback_text</code>: Additional comments or feedback.</li>
+                  <li><code>timestamp</code>: Date and time when the feedback was submitted.</li>
+              </ul>
+              <pre>
+  {
+      "_id": "66e5d42b9ca2fbb0d0988b3c",
+      "email": "abc@gmail.com",
+      "csat": "5",
+      "feedback_text": "Noise",
+      "timestamp": "2024-09-14T18:21:31.968+00:00"
+  }
+              </pre>
+          </div>
+        </section>
+		
+        <hr class="divider">
+        
+            <!-- Footer
+        ============================ -->
+            <section id="database3">
+  
+          <h3>3. Comment Collection</h3>
+          <div class="details">
+              <p><strong>Purpose:</strong> Stores user-submitted comments, often used for contacting support or leaving suggestions.</p>
+              <p><strong>Fields:</strong></p>
+              <ul>
+                  <li><code>_id</code>: Unique identifier for each comment.</li>
+                  <li><code>name</code>: Name of the person leaving the comment.</li>
+                  <li><code>email</code>: Email of the commenter.</li>
+                  <li><code>subject</code>: Subject of the comment.</li>
+                  <li><code>message</code>: Content of the comment.</li>
+              </ul>
+              <pre>
+  {
+      "_id": "66e316b1862df94a37bbcf3b",
+      "name": "Shashank",
+      "email": "abc@gmail.com",
+      "subject": "hello",
+      "message": "hello rhea"
+  }
+              </pre>
+          </div>
+        </section>
+		
+        <hr class="divider">
+        
+            <!-- Footer
+        ============================ -->
+            <section id="database4">
+  
+          <h3>4. Prediction Collection</h3>
+          <div class="details">
+              <p><strong>Purpose:</strong> Stores prediction data for images uploaded by users.</p>
+              <p><strong>Fields:</strong></p>
+              <ul>
+                  <li><code>_id</code>: Unique identifier for each prediction entry.</li>
+                  <li><code>email</code>: Email of the user who uploaded the image.</li>
+                  <li><code>image_url</code>: Cloudinary URL of the uploaded image.</li>
+                  <li><code>timestamp</code>: Date and time of the prediction.</li>
+                  <li><code>predictions</code>: Object containing prediction-related details, such as session ID.</li>
+              </ul>
+              <pre>
+  {
+      "_id": "66e53d573f8a58f1fd6e88ff",
+      "email": "abc@gmail.com",
+      "image_url": "http://res.cloudinary.com/.../n53fajlpi...",
+      "timestamp": "2024-09-14T07:37:59.536573",
+      "predictions": {
+          "session_id": "20240914123256329775604"
+      }
+  }
+              </pre>
+          </div>
+        </section>
+		
+        <hr class="divider">
+        
+            <!-- Footer
+        ============================ -->
+            <section id="database5">
+  
+          <h3>5. User Chat History Collection</h3>
+          <div class="details">
+              <p><strong>Purpose:</strong> Records chat sessions between users and the chatbot.</p>
+              <p><strong>Fields:</strong></p>
+              <ul>
+                  <li><code>_id</code>: Unique identifier for each chat history entry.</li>
+                  <li><code>email</code>: Email of the user involved in the chat.</li>
+                  <li><code>session_id</code>: Unique identifier linking this chat history to predictions.</li>
+                  <li><code>messages</code>: Array of message objects exchanged during the chat.</li>
+                  <li><code>timestamp</code>: Date and time the chat session was recorded.</li>
+              </ul>
+              <pre>
+  {
+      "_id": "66e53d883f8a58f1fd6e8900",
+      "email": "abc@gmail.com",
+      "session_id": "20240914123256329775604",
+      "messages": [
+          { "sender": "user", "content": "Hello!", "timestamp": "2024-09-14T07:38:10.200Z" },
+          { "sender": "bot", "content": "How can I help you?", "timestamp": "2024-09-14T07:38:12.500Z" }
+      ],
+      "timestamp": "2024-09-14T07:38:48.200Z"
+  }
+              </pre>
+          </div>
+        </section>
+		 
+		<hr class="divider">
+		
+		
+        <section id="api">
+          <h2>API Documentation</h2>
+        <p>This documentation provides an overview of the APIs used in the application for various services such as database connections, email configurations, cloud services, external APIs, and chatbot integration.</p>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="dataapi">
+        <h3>1. Database Configuration</h3>
+        <p><strong>Environment Variable:</strong></p>
+        <ul>
+            <li><code>URI</code>: <code>mongodb+srv://{uniqueID}/</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Used to connect the application to MongoDB Atlas for data storage and retrieval.</p>
+        <pre>
+Example: Connecting to MongoDB
+from pymongo import MongoClient
+client = MongoClient(URI)
+db = client.get_database("database-name")
+        </pre>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="emailapi">
+
+        <h3>2. Email Configuration</h3>
+        <p><strong>Environment Variables:</strong></p>
+        <ul>
+            <li><code>MAIL_SERVER</code>: <code>smtp.gmail.com</code></li>
+            <li><code>MAIL_PORT</code>: <code>Unique Code</code></li>
+            <li><code>MAIL_USE_TLS</code>: <code>True</code></li>
+            <li><code>MAIL_USERNAME</code>: <code>abc@gmail.com</code></li>
+            <li><code>MAIL_PASSWORD</code>: <code>Unique Code</code></li>
+            <li><code>MAIL_DEFAULT_SENDER</code>: <code>abc@gmail.com</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Used for sending emails, such as notifications and password resets.</p>
+        <pre>
+Example: Sending an Email
+from flask_mail import Mail, Message
+mail = Mail(app)
+msg = Message(subject="Hello", sender=MAIL_DEFAULT_SENDER, recipients=["recipient@example.com"])
+msg.body = "This is a test email."
+mail.send(msg)
+        </pre>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="fireapi">
+
+        <h3>3. Firebase Configuration</h3>
+        <ul>
+            
+            <li><code>CRED</code>: <code>./static/UniqueID.json</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Used for Firebase integration and Google and Microsoft Login.</p>
+        <pre>
+Example: Firebase Integration
+import firebase_admin
+from firebase_admin import credentials
+cred = credentials.Certificate(CRED)
+firebase_admin.initialize_app(cred)
+        </pre>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="cloudapi">
+
+        <h3>4. Cloudinary Configuration</h3>
+        <p><strong>Environment Variables:</strong></p>
+        <ul>
+            <li><code>CLOUD_NAME</code>: <code>UniqueID</code></li>
+            <li><code>API_KEY</code>: <code>UniqueID</code></li>
+            <li><code>API_SECRET</code>: <code>UniqueID</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Used for image uploads and storage in Cloudinary.</p>
+        <pre>
+Example: Uploading an Image
+import cloudinary.uploader
+response = cloudinary.uploader.upload("local-image-path.jpg", cloud_name=CLOUD_NAME)
+image_url = response.get("secure_url")
+        </pre>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="modalapi">
+
+        <h3>5. Modal API</h3>
+        <ul>
+            <li><code>cMODAL_API</code>: <code>https://shashankvns-test-deploy.hf.space/</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> External API used for processing or image classification and predictions (e.g., ML model predictions).</p>
+        <pre>
+Example: Calling Modal API
+import requests
+response = requests.post(cMODAL_API, json={"input": "data"})
+result = response.json()
+        </pre>
+      </section>
+		
+      <hr class="divider">
+      
+          <!-- Footer
+      ============================ -->
+          <section id="watsonapi">
+
+        <h3>6. Watsonx Assistant Chatbot Integration</h3>
+        <p><strong>Configuration:</strong></p>
+        <ul>
+            <li><code>integrationID</code>: <code>UniqueID</code></li>
+            <li><code>region</code>: <code>us-south</code></li>
+            <li><code>serviceInstanceID</code>: <code>UniqueID</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Embeds a Watson Assistant chatbot on the webpage for user interaction.</p>
+        <pre>
+Example: Embedding Watson Assistant Chat
+const customElement = document.querySelector('#WebChatContainer');
+window.watsonAssistantChatOptions = {
+    integrationID: "2471a3ab-6e0b-4be6-a172-3304f884337b",
+    region: "us-south",
+    serviceInstanceID: "0c9fd8e9-11cd-4ce3-9bd8-30f3209b5ff9",
+    element: customElement
+};
+setTimeout(() => {
+    const t = document.createElement('script');
+    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+});
+        </pre>
+        <p>This integration enables a chatbot interface in the webpage at the element <code>#WebChatContainer</code>.</p>
+    </div>
+        </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="idocs_image">
+      <h2>UI/UX Documentation</h2>
+      <p class="text-4">
+        Documentation and examples for the application's key screens and features. Screenshots and descriptions highlight the responsive behavior and interactive elements.
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="landing">
+    
+      <!-- Landing Page -->
+      <h3 class="mt-5">Landing Page</h3>
+      <p>
+        The landing page welcomes users with a clean and engaging design. It provides navigation options for login, registration, and exploring the app's features.
+      </p>
+      <p>
+        <img src="landing.png" class="img-fluid" alt="Landing Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="login">
+    
+      <!-- Login Page -->
+      <h3 class="mt-5">Login Page</h3>
+      <p>
+        The login page supports authentication via Google and Microsoft. Buttons are prominently displayed for social logins, ensuring a seamless user experience.
+      </p>
+      <p>
+        <img src="login.png" class="img-fluid" alt="Login Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="register">
+    
+      <!-- Registration Page -->
+      <h3 class="mt-5">Registration Page</h3>
+      <p>
+        New users are directed to the registration page after login. The form is pre-filled with email (uneditable) and includes fields for additional details like allergies.
+      </p>
+      <p>
+        <img src="register.png" class="img-fluid" alt="Registration Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="home">
+    
+      <!-- Home Page -->
+      <h3 class="mt-5">Home Page</h3>
+      <p>
+        The home page provides users with personalized data, including their profile information, recent activity, and quick navigation options.
+      </p>
+      <p>
+        <img src="home.png" class="img-fluid" alt="Home Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="newchat">
+    
+      <!-- New Chat Page -->
+      <h3 class="mt-5">New Chat Page</h3>
+      <p>
+        Users can upload images and chat with the chatbot for treatment suggestions. The page includes drag-and-drop functionality and a chatbot interface.
+      </p>
+      <p>
+        <img src="newchat.png" class="img-fluid" alt="New Chat Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="history">
+    
+      <!-- History Page -->
+      <h3 class="mt-5">History Page</h3>
+      <p>
+        The history page displays past uploaded images and chat history. Users can revisit their previous interactions and treatment recommendations.
+      </p>
+      <p>
+        <img src="history.png" class="img-fluid" alt="History Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="profile">
+    
+      <!-- Profile Page -->
+      <h3 class="mt-5">Profile Page</h3>
+      <p>
+        The profile page allows users to update personal information, including allergies and preferences. It also provides a centralized view of their account details.
+      </p>
+      <p>
+        <img src="profile.png" class="img-fluid" alt="Profile Page Screenshot">
+      </p>
+    </section>
+		  
+	
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+    <section id="aboutus">
+    
+      <!-- About Us Page -->
+      <h3 class="mt-5">About Us Page</h3>
+      <p>
+        The About Us page shares information about the app, its purpose, and the development team. The design is clean and focuses on building user trust.
+      </p>
+      <p>
+        <img src="aboutus.png" class="img-fluid" alt="About Us Page Screenshot">
+      </p>
+      
+    </section>
+    
+		  
+		 
+		
+		<hr class="divider">
+		
+		<!-- Video
+		============================ -->
+        <section id="idocs_video">
+          <h2> WebApp Video</h2>
+          <p class="text-4">Explore our web app's functionality through a detailed demonstration video. This video showcases how users can navigate, interact with features, and make the most of the application on various devices.</p> 
+          
+		  <h3 class="mt-5">Embedded Video</h3>
+		  <p> The video below provides an overview of our working web application. It demonstrates the user experience, including login, registration, image uploads, chatbot interactions, and more. The responsive design ensures seamless usability across all devices.</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xw3OYLcUsSI?si=T7gRT3WerRzaDw52" allowfullscreen></iframe>
+</div>
+          
+        </section>
+        
+		      
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://www.linkedin.com/in/shashank-mishra-546328205/" target="_blank" title="" data-original-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://github.com/nkshash/nkshash" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2024 <a href="https://vita-latest.onrender.com/">Vita</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="https://chic-sherbet-f73d06.netlify.app/">Shashank Mishra</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

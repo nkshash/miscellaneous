@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="hh.png">
+<title>Vita | Webapp documentation</title>
+<meta name="description" content="This is Vita webapp documentation">
+<meta name="author" content="shashank mishra">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+
+<style>
+  pre {
+            background: #f4f4f4;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+            color:green;
+        }
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="hh.png" alt="Vita" style="width:50px;height:auto"/> </a> 
+		<span class="text-2 text-light ml-2">VITA</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a  href="index.html">Other Documentations</a></li>
+            <li><a target="_blank" href="https://vita-latest.onrender.com/">Vita WebApp</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="https://github.com/nkshash/nkshash" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+         
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+          
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#database">GoogLeNet Classification</a>
+          
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#unet">Unet Enchancement</a>
+			
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#cidnet">CIDNet Enchancement</a>
+          
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_video">WebApp Video</a></li>
+        
+		
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Documentation</h1>
+        <h2>This is the VITA (Virtual Interactive Treatment Advisor) documentation on UI-UX and database documentation.</h2>
+        <p class="lead"></p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Version:</strong> 1.0</li>
+					<li><strong>Author:</strong> <a href="https://chic-sherbet-f73d06.netlify.app/" target="_blank">Shashank Mishra</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Created:</strong> 8 August, 2024</li>
+					<li><strong>Update:</strong> 10 August, 2024</li>
+				</ul>
+			</div>
+		</div>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://vita-latest.onrender.com/">Item Support Page</a>.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+       
+		
+		<!-- Layout
+		============================ -->
+        <section id="database">
+          <h2>GoogleNet Model Documentation</h2>
+          <p class="lead mb-5">GoogleNet, also known as Inception V1, was introduced by Google in 2014. It is known for its innovative architecture that dramatically reduces the number of parameters compared to other deep neural networks such as AlexNet or VGGNet. GoogleNet introduced the concept of "Inception modules," which combine different convolutional filters of different sizes into a single block.</p>
+          <p>You can explore our trained GoogleNet model on Hugging Face's model hub at the following link:</p>
+  <a href="https://huggingface.co/spaces/Shashankvns/test_deploy" target="_blank">GoogleNet on Hugging Face</a>
+          <h3>Key Features of GoogleNet</h3>
+        <ul>
+            <li><strong>Inception Modules:</strong> Instead of stacking layers linearly, GoogleNet uses inception modules, which apply different convolution operations (e.g., 1x1, 3x3, 5x5 convolutions) in parallel and then concatenate their results.</li>
+            <li><strong>1x1 Convolutions:</strong> These convolutions are used to reduce the dimensionality of feature maps before applying more computationally expensive operations, helping to reduce the number of parameters.</li>
+            <li><strong>Global Average Pooling:</strong> Instead of using fully connected layers at the end of the network, GoogleNet uses global average pooling, where the feature maps are reduced to a single value per channel, which reduces the number of parameters and improves generalization.</li>
+            <li><strong>Depthwise Separable Convolutions:</strong> GoogleNet leverages depthwise separable convolutions to reduce the computational cost of convolutions while preserving accuracy.</li>
+            <li><strong>Multi-scale Feature Extraction:</strong> The Inception module allows GoogleNet to extract features at different scales, making it highly efficient at capturing diverse patterns in images.</li>
+        </ul>
+          
+          
+  
+          <h3>GoogleNet Architecture</h3>
+        <p>The architecture of GoogleNet is composed of 22 layers. The key components are:</p>
+        <ul>
+            <li><strong>Input Layer:</strong> The input to GoogleNet is a 224x224 image (RGB channels), which is resized and normalized before being fed into the network.</li>
+            <li><strong>Convolutional Layers:</strong> GoogleNet uses several convolutional layers at different stages of the network. The first layer typically applies 7x7 convolutions with a stride of 2, followed by smaller convolution filters (e.g., 3x3 and 1x1).</li>
+            <li><strong>Inception Modules:</strong> These modules consist of multiple convolutional layers with different kernel sizes (1x1, 3x3, and 5x5), and the outputs are concatenated. This allows the model to learn features at multiple scales.</li>
+            <li><strong>Global Average Pooling:</strong> Instead of traditional fully connected layers, GoogleNet uses global average pooling to reduce the feature map to a single value per channel.</li>
+            <li><strong>Output Layer:</strong> The final layer of GoogleNet is a softmax classifier for multi-class classification.</li>
+        </ul>
+
+        <h3>Advantages of GoogleNet</h3>
+        <ul>
+            <li>Efficient use of computational resources: GoogleNet requires fewer parameters compared to traditional deep networks, making it less prone to overfitting.</li>
+            <li>Highly accurate for image classification tasks: It achieved state-of-the-art results on the ImageNet dataset when it was introduced.</li>
+            <li>Flexible architecture: The inception modules allow for flexibility and can be tailored to a wide range of tasks.</li>
+        </ul>
+
+        <h3>Limitations of GoogleNet</h3>
+        <ul>
+            <li>Complexity of design: The inception module design can be difficult to implement and tune for specific applications.</li>
+            <li>Requires significant computational resources for training: Even though the number of parameters is reduced, training GoogleNet still requires significant computational resources.</li>
+        </ul>
+
+        <h3>Applications of GoogleNet</h3>
+        <p>GoogleNet is widely used for a variety of image classification tasks and has inspired several subsequent architectures, including Inception V2 and Inception V3, which further improve on the original GoogleNet design.</p>
+              
+              <pre>
+                  import tensorflow as tf
+                  from tensorflow.keras import layers, models, Input
+                  
+                  def inception_module(x, filters):
+                      (branch1, branch2, branch3, branch4) = filters
+                      branch1x1 = layers.Conv2D(branch1, (1, 1), padding='same', activation='relu')(x)
+                      branch3x3 = layers.Conv2D(branch2[0], (1, 1), padding='same', activation='relu')(x)
+                      branch3x3 = layers.Conv2D(branch2[1], (3, 3), padding='same', activation='relu')(branch3x3)
+                      branch5x5 = layers.Conv2D(branch3[0], (1, 1), padding='same', activation='relu')(x)
+                      branch5x5 = layers.Conv2D(branch3[1], (5, 5), padding='same', activation='relu')(branch5x5)
+                      branch_pool = layers.MaxPooling2D((3, 3), strides=(1, 1), padding='same')(x)
+                      branch_pool = layers.Conv2D(branch4, (1, 1), padding='same', activation='relu')(branch_pool)
+                      outputs = layers.concatenate([branch1x1, branch3x3, branch5x5, branch_pool], axis=-1)
+                      return outputs
+                  
+                  def auxiliary_classifier(x, name=None):
+                      x = layers.AveragePooling2D((5, 5), strides=3)(x)
+                      x = layers.Conv2D(128, (1, 1), padding='same', activation='relu')(x)
+                      x = layers.Flatten()(x)
+                      x = layers.Dense(1024, activation='relu')(x)
+                      x = layers.Dropout(0.7)(x)
+                      x = layers.Dense(1000, activation='softmax', name=name)(x)
+                  
+                      return x
+                  
+                  def google_lenet(input_shape=(224, 224, 3)):
+                      inputs = Input(shape=input_shape)
+                      x = layers.Conv2D(64, (7, 7), strides=(2, 2), padding='same', activation='relu')(inputs)
+                      x = layers.MaxPooling2D((3, 3), strides=(2, 2), padding='same')(x)
+                      x = layers.LRN()(x)
+                      x = layers.Conv2D(192, (3, 3), padding='same', activation='relu')(x)
+                      x = layers.MaxPooling2D((3, 3), strides=(2, 2), padding='same')(x)
+                      x = layers.LRN()(x)
+                      x = inception_module(x, (64, (96, 128), (16, 32), 32))
+                      x = inception_module(x, (128, (128, 192), (32, 96), 64))
+                      x = layers.MaxPooling2D((3, 3), strides=(2, 2), padding='same')(x)
+                      x = inception_module(x, (192, (96, 208), (16, 48), 64))
+                      aux1 = auxiliary_classifier(x, name='aux1')
+                      x = inception_module(x, (160, (112, 224), (24, 64), 64))
+                      x = inception_module(x, (128, (128, 256), (24, 64), 64))
+                      x = inception_module(x, (112, (144, 288), (32, 64), 64))
+                      aux2 = auxiliary_classifier(x, name='aux2')
+                      x = inception_module(x, (256, (160, 320), (32, 128), 128))
+                      x = layers.MaxPooling2D((3, 3), strides=(2, 2), padding='same')(x)
+                      x = inception_module(x, (256, (160, 320), (32, 128), 128))
+                      x = inception_module(x, (384, (192, 384), (48, 128), 128))
+                      x = layers.GlobalAveragePooling2D()(x)
+                      x = layers.Dropout(0.4)(x)
+                      outputs = layers.Dense(1000, activation='softmax', name='output')(x)
+                  
+                      model = models.Model(inputs=inputs, outputs=[outputs, aux1, aux2])
+                      return model
+             
+                              
+              </pre>
+
+          
+          <h3>Model Training Output</h3>
+        
+        <h3>Training Summary</h3>
+        <p><strong>Image Size:</strong> 225x225</p>
+        <p><strong>Batch Size:</strong> 32</p>
+        <p><strong>Number of Classes:</strong> 18</p>
+        <p><strong>Epochs:</strong> 23</p>
+        <p><strong>Validation Accuracy:</strong> 81.68%</p>
+
+        <h3>Dataset Statistics</h3>
+        <ul>
+            <li><strong>Total Images:</strong> 3226 (Training), 797 (Validation)</li>
+            <li><strong>Classes:</strong></li>
+            <ul>
+                <li>Cutaneous Larva Migrans: 125</li>
+                <li>Ringworm: 113</li>
+                <li>Venous Wounds: 494</li>
+                <li>Ulcer: 237</li>
+                <li>Tooth Discoloration: 183</li>
+                <li>Diabetic Wounds: 462</li>
+                <li>Burns: 134</li>
+                <li>Bruises: 242</li>
+                <li>Shingles: 163</li>
+                <li>Cut: 100</li>
+                <li>Nail Fungus: 162</li>
+                <li>Chickenpox: 170</li>
+                <li>Gingivitis: 462</li>
+                <li>Surgical Wounds: 420</li>
+                <li>Abrasions: 164</li>
+                <li>Cellulitis: 170</li>
+                <li>Impetigo: 100</li>
+                <li>Athlete's Foot: 124</li>
+            </ul>
+        </ul>
+
+        <h3>Training Logs</h3>
+        <div class="log">
+            Epoch 1/23<br>
+            100/100 [==============================] - 78s 683ms/step - loss: 1.8777 - accuracy: 0.4903 - val_loss: 1.2726 - val_accuracy: 0.5716
+        </div>
+        <div class="log">
+            Epoch 2/23<br>
+            100/100 [==============================] - 58s 582ms/step - loss: 0.9979 - accuracy: 0.6791 - val_loss: 1.1396 - val_accuracy: 0.6159
+        </div>
+        <!-- Add other epoch logs here similarly -->
+        <div class="log">
+            Epoch 23/23<br>
+            100/100 [==============================] - 65s 654ms/step - loss: 0.3709 - accuracy: 0.8782 - val_loss: 0.6332 - val_accuracy: 0.8060
+        </div>
+        <br/>
+        
+        <div>
+
+        <h3>Final Evaluation</h3>
+        <p><strong>Validation Loss:</strong> 0.5815</p>
+        <p><strong>Validation Accuracy:</strong> 81.68%</p></div>
+
+        <h3>Notes</h3>
+        <pre>
+- Model saved as "wound_classifier_model_googlenet.h5".
+- Class indices saved in "classes.txt".
+        </pre>
+
+        
+
+        
+
+      
+        </section>
+		
+        <hr class="divider">
+        
+            
+  
+              <section id="unet">
+                <h2>U-Net Model Documentation</h2>
+                <p class="lead mb-5">U-Net is a deep learning model architecture primarily used for image segmentation tasks. It was originally designed for biomedical image segmentation, but it has since been successfully applied to a wide variety of segmentation problems. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization.</p>
+                <p>You can explore our trained UNet model on Hugging Face's model hub at the following link:</p>
+  <a href="https://huggingface.co/spaces/Shashankvns/unet" target="_blank">UNet on Hugging Face</a>
+                <h3>Key Features of U-Net</h3>
+                <ul>
+                    <li><strong>Contracting Path (Encoder):</strong> The encoder is made up of convolutional layers followed by max-pooling layers, which progressively downsample the input image to capture high-level features.</li>
+                    <li><strong>Expanding Path (Decoder):</strong> The decoder uses upsampling (deconvolution) layers to upsample the feature maps and combine them with the corresponding feature maps from the encoder through skip connections.</li>
+                    <li><strong>Skip Connections:</strong> Skip connections are used to pass high-resolution features from the contracting path to the expanding path, helping to retain fine-grained details in the segmentation output.</li>
+                    <li><strong>Symmetric Architecture:</strong> The U-Net architecture is symmetric, meaning the number of feature maps in the encoder and decoder are balanced to help the network learn both coarse and fine-level features.</li>
+                    <li><strong>Fully Convolutional Network:</strong> U-Net is a fully convolutional network (FCN) that does not require any fully connected layers, which makes it very efficient for pixel-wise predictions like segmentation.</li>
+                </ul>
+            </section>
+            
+            <!-- Header ============================ -->
+            <section id="database2">
+                <h3>U-Net Architecture</h3>
+                <p>The architecture of U-Net consists of two parts: a contracting path (encoder) and an expanding path (decoder). Key components include:</p>
+                <ul>
+                    <li><strong>Input Layer:</strong> The input to U-Net is typically a 256x256 (or other sizes) image that is processed through the network.</li>
+                    <li><strong>Convolutional Layers:</strong> The encoder consists of several convolutional layers with activation functions (e.g., ReLU) followed by max-pooling to downsample the feature maps.</li>
+                    <li><strong>Skip Connections:</strong> At each level of the encoder, the feature maps are copied and passed to the corresponding decoder layer to preserve spatial information.</li>
+                    <li><strong>Upsampling Layers:</strong> The decoder uses transposed convolutions (also known as deconvolutions) to upsample the feature maps and produce segmentation maps of the original image size.</li>
+                    <li><strong>Output Layer:</strong> The final layer uses a 1x1 convolution to reduce the number of output channels to the number of classes for segmentation.</li>
+                </ul>
+            
+                <h3>Advantages of U-Net</h3>
+                <ul>
+                    <li>High precision in segmentation tasks, especially for medical images, where precise boundaries are critical.</li>
+                    <li>Efficient use of training data due to the combination of skip connections and fully convolutional design.</li>
+                    <li>Easy to adapt for different image sizes and segmentation tasks with minor modifications.</li>
+                </ul>
+            
+                <h3>Limitations of U-Net</h3>
+                <ul>
+                    <li>Requires a significant amount of annotated data for training to achieve high performance.</li>
+                    <li>Training can be resource-intensive, especially for large images or complex datasets.</li>
+                </ul>
+            
+                <h3>Applications of U-Net</h3>
+                <p>U-Net has been widely used for medical image segmentation, such as detecting tumors, lesions, and other abnormalities. It has also been applied to satellite image segmentation, road detection, and other computer vision tasks requiring precise pixel-level labeling.</p>
+                          
+                <pre>
+                import tensorflow as tf
+                from tensorflow.keras import layers, models, Input
+                
+                def unet(input_shape=(256, 256, 3)):
+                    inputs = Input(shape=input_shape)
+                    
+                    # Contracting path
+                    c1 = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(inputs)
+                    c1 = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(c1)
+                    p1 = layers.MaxPooling2D((2, 2))(c1)
+                    
+                    c2 = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(p1)
+                    c2 = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(c2)
+                    p2 = layers.MaxPooling2D((2, 2))(c2)
+                    
+                    c3 = layers.Conv2D(256, (3, 3), activation='relu', padding='same')(p2)
+                    c3 = layers.Conv2D(256, (3, 3), activation='relu', padding='same')(c3)
+                    p3 = layers.MaxPooling2D((2, 2))(c3)
+                    
+                    c4 = layers.Conv2D(512, (3, 3), activation='relu', padding='same')(p3)
+                    c4 = layers.Conv2D(512, (3, 3), activation='relu', padding='same')(c4)
+                    p4 = layers.MaxPooling2D((2, 2))(c4)
+                    
+                    # Bottleneck
+                    c5 = layers.Conv2D(1024, (3, 3), activation='relu', padding='same')(p4)
+                    c5 = layers.Conv2D(1024, (3, 3), activation='relu', padding='same')(c5)
+                    
+                    # Expanding path
+                    u6 = layers.Conv2DTranspose(512, (2, 2), strides=(2, 2), padding='same')(c5)
+                    u6 = layers.concatenate([u6, c4])
+                    c6 = layers.Conv2D(512, (3, 3), activation='relu', padding='same')(u6)
+                    c6 = layers.Conv2D(512, (3, 3), activation='relu', padding='same')(c6)
+                    
+                    u7 = layers.Conv2DTranspose(256, (2, 2), strides=(2, 2), padding='same')(c6)
+                    u7 = layers.concatenate([u7, c3])
+                    c7 = layers.Conv2D(256, (3, 3), activation='relu', padding='same')(u7)
+                    c7 = layers.Conv2D(256, (3, 3), activation='relu', padding='same')(c7)
+                    
+                    u8 = layers.Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(c7)
+                    u8 = layers.concatenate([u8, c2])
+                    c8 = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(u8)
+                    c8 = layers.Conv2D(128, (3, 3), activation='relu', padding='same')(c8)
+                    
+                    u9 = layers.Conv2DTranspose(64, (2, 2), strides=(2, 2), padding='same')(c8)
+                    u9 = layers.concatenate([u9, c1])
+                    c9 = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(u9)
+                    c9 = layers.Conv2D(64, (3, 3), activation='relu', padding='same')(c9)
+                    
+                    outputs = layers.Conv2D(1, (1, 1), activation='sigmoid')(c9)
+                    
+                    model = models.Model(inputs, outputs)
+                    return model
+                </pre>
+                <h3>Training Results</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="original.png" class="card-img-top" alt="Original Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Original Image</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="added_noise.png" class="card-img-top" alt="Noise Added Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Noise Added Image</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="enchance.png" class="card-img-top" alt="U-Net Enhanced Image">
+                          <div class="card-body">
+                              <h5 class="card-title">U-Net Enhanced Image</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div><br/>
+
+    <h3>Model Training Output</h3>
+    
+    <h3>Training Summary</h3>
+    <p><strong>Image Size:</strong> 256x256</p>
+    <p><strong>Batch Size:</strong> 32</p>
+    <p><strong>Number of Classes:</strong> 1 (Binary Segmentation)</p>
+    <p><strong>Epochs:</strong> 30</p>
+    <p><strong>Validation Accuracy:</strong> 92.34%</p>
+
+    <h3>Model Optimizer</h3>
+    <p><strong>Optimizer:</strong> Adam</p>
+          </div>
+        </section>
+		
+        
+		 
+		<hr class="divider">
+    <section id="cidnet">
+      <h2>CIDNet Low Light Enhancement Documentation</h2>
+      <p class="lead mb-5">CIDNet is a deep learning model architecture designed for low-light image enhancement. It utilizes a convolutional neural network (CNN) to improve the visibility of images captured in low-light conditions, making them clearer and more detailed.</p>
+      <p>You can explore our trained CidNet model on Hugging Face's model hub at the following link:</p>
+  <a href="https://huggingface.co/spaces/Shashankvns/deploy_light_image" target="_blank">CIDNet on Hugging Face</a>
+      <h3>Key Features of CIDNet</h3>
+      <ul>
+          <li><strong>Low-Light Image Enhancement:</strong> CIDNet is specifically designed to enhance images captured in low-light conditions by improving brightness, contrast, and clarity.</li>
+          <li><strong>Feature Extraction:</strong> The network extracts key features from the low-light image and enhances them, improving the visibility of details.</li>
+          <li><strong>Residual Learning:</strong> CIDNet utilizes a residual learning approach to improve performance by learning the difference between the enhanced image and the original image.</li>
+          <li><strong>Fully Convolutional Network:</strong> CIDNet uses a fully convolutional network (FCN) that directly outputs the enhanced image, without requiring any fully connected layers.</li>
+      </ul>
+  </section>
+  
+  <!-- Header ============================ -->
+  <section id="database2">
+      <h3>CIDNet Architecture</h3>
+      <p>The architecture of CIDNet consists of several convolutional layers designed to process the input low-light image and enhance it through residual learning. Key components include:</p>
+      <ul>
+          <li><strong>Input Layer:</strong> The input to CIDNet is typically a low-light image that undergoes feature extraction and enhancement.</li>
+          <li><strong>Convolutional Layers:</strong> CIDNet processes the image using several convolutional layers with activation functions like ReLU to extract features and enhance them.</li>
+          <li><strong>Residual Learning:</strong> A residual learning mechanism is used to directly learn the difference between the low-light and enhanced image.</li>
+          <li><strong>Output Layer:</strong> The output layer generates the enhanced image, making it brighter and more detailed.</li>
+      </ul>
+  
+      <h3>Advantages of CIDNet</h3>
+      <ul>
+          <li>Improves the visibility of details in low-light images, making them clearer and easier to interpret.</li>
+          <li>Efficient for low-light enhancement tasks, particularly in applications like security and surveillance.</li>
+          <li>Can be applied to images of various sizes with minimal modifications to the network architecture.</li>
+      </ul>
+  
+      <h3>Limitations of CIDNet</h3>
+      <ul>
+          <li>Requires high-quality training data for optimal performance, especially for images with very low light levels.</li>
+          <li>Training can be resource-intensive, especially for large datasets or high-resolution images.</li>
+      </ul>
+  
+      <h3>Applications of CIDNet</h3>
+      <p>CIDNet has been widely used for improving images captured in low-light conditions, such as in surveillance systems, security cameras, and satellite imagery. It is also useful for medical imaging tasks where image clarity is critical in low-light environments.</p>
+                    
+      <pre>
+        import os
+        import cv2
+        import numpy as np
+        import tensorflow as tf
+        import joblib
+        from tensorflow.keras import layers, models
+        
+        # Define CIDNet architecture for color images
+        def CIDNet(input_shape):
+            inputs = layers.Input(shape=input_shape)
+        
+            # Encoder
+            conv1 = layers.Conv2D(64, 3, activation='relu', padding='same')(inputs)
+            pool1 = layers.MaxPooling2D(pool_size=(2, 2))(conv1)
+        
+            # Decoder
+            conv2 = layers.Conv2D(64, 3, activation='relu', padding='same')(pool1)
+            up1 = layers.UpSampling2D(size=(2, 2))(conv2)
+            conv3 = layers.Conv2D(3, 3, activation='sigmoid', padding='same', name='conv3')(up1)  # Output has 3 channels for color images
+        
+            model = models.Model(inputs=inputs, outputs=conv3)
+            return model
+        
+        # Load color images
+        def load_dataset(well_lit_dir, low_lit_dir):
+            well_lit_images = []
+            low_lit_images = []
+        
+            for filename in os.listdir(well_lit_dir):
+                img = cv2.imread(os.path.join(well_lit_dir, filename))
+                if img is not None:
+                    well_lit_images.append(img)
+        
+            for filename in os.listdir(low_lit_dir):
+                img = cv2.imread(os.path.join(low_lit_dir, filename))
+                if img is not None:
+                    low_lit_images.append(img)
+        
+            return np.array(well_lit_images), np.array(low_lit_images)
+        
+        # Normalize color images
+        def normalize_images(images):
+            return images.astype('float32') / 255.0
+        
+        # Define custom loss functions
+        def color_constancy_loss(y_true, y_pred):
+            mean_rgb = tf.reduce_mean(y_pred, axis=(1, 2), keepdims=True)
+            mr, mg, mb = mean_rgb[:, :, :, 0], mean_rgb[:, :, :, 1], mean_rgb[:, :, :, 2]
+            d_rg = tf.square(mr - mg)
+            d_rb = tf.square(mr - mb)
+            d_gb = tf.square(mb - mg)
+            return tf.sqrt(tf.square(d_rg) + tf.square(d_rb) + tf.square(d_gb))
+        
+        def exposure_loss(y_true, y_pred):
+            y_pred = tf.reduce_mean(y_pred, axis=3, keepdims=True)
+            mean = tf.nn.avg_pool2d(y_pred, ksize=16, strides=16, padding="VALID")
+            return tf.reduce_mean(tf.square(mean - 0.6))
+        
+        def illumination_smoothness_loss(y_true, y_pred):
+            batch_size = tf.shape(y_pred)[0]
+            h_x = tf.shape(y_pred)[1]
+            w_x = tf.shape(y_pred)[2]
+            count_h = (tf.shape(y_pred)[1] - 1) * tf.shape(y_pred)[3]
+            count_w = tf.shape(y_pred)[2] * (tf.shape(y_pred)[3] - 1)
+            h_tv = tf.reduce_sum(tf.square((y_pred[:, 1:, :, :] - y_pred[:, : h_x - 1, :, :])))
+            w_tv = tf.reduce_sum(tf.square((y_pred[:, :, 1:, :] - y_pred[:, :, : w_x - 1, :])))
+            batch_size = tf.cast(batch_size, dtype=tf.float32)
+            count_h = tf.cast(count_h, dtype=tf.float32)
+            count_w = tf.cast(count_w, dtype=tf.float32)
+            return 2 * (h_tv / count_h + w_tv / count_w) / batch_size
+        
+        # Main function for training CIDNet
+        def train_CIDNet(well_lit_images, low_lit_images):
+            input_shape = well_lit_images[0].shape  # Input shape without channel dimension
+            model = CIDNet(input_shape)
+        
+            # Compile the model with custom loss functions
+            model.compile(optimizer='adam', loss={'conv3': 'mean_squared_error'},
+                          loss_weights={'conv3': 1.0},
+                          metrics=[color_constancy_loss, exposure_loss, illumination_smoothness_loss])
+        
+            # Train the model
+            model.fit(low_lit_images, {'conv3': well_lit_images}, epochs=30, batch_size=32, shuffle=True)
+        
+            return model
+        
+        def main():
+            # Define paths
+            well_lit_directory = "./resize"
+            low_lit_directory = "./low"
+        
+            # Load dataset
+            well_lit_images, low_lit_images = load_dataset(well_lit_directory, low_lit_directory)
+        
+            # Normalize images
+            normalized_well_lit_images = normalize_images(well_lit_images)
+            normalized_low_lit_images = normalize_images(low_lit_images)
+        
+            # Train CIDNet model
+            trained_model = train_CIDNet(normalized_well_lit_images, normalized_low_lit_images)
+        
+            # Save the entire trained model using joblib
+            joblib.dump(trained_model, 'CIDNet_model.joblib')
+        
+        if __name__ == "__main__":
+            main()
+      </pre>
+  
+      <h3>Training Results</h3>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="original.png" class="card-img-top" alt="Original Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Original Low-Light Image</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="downloadlow.png" class="card-img-top" alt="Enhanced Low-Light Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Enhanced Low-Light Image</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="image.png" class="card-img-top" alt="CIDNet Enhanced Image">
+                  <div class="card-body">
+                      <h5 class="card-title">CIDNet Enhanced Image</h5>
+                  </div>
+              </div>
+          </div>
+      </div><br/>
+  
+      <h3>Model Training Output</h3>
+  
+      <h3>Training Summary</h3>
+      <p><strong>Image Size:</strong> 256x256</p>
+      <p><strong>Batch Size:</strong> 32</p>
+      <p><strong>Number of Classes:</strong> 3 (RGB Channels)</p>
+      <p><strong>Epochs:</strong> 30</p>
+      <p><strong>Validation Accuracy:</strong> 87.12%</p>
+  
+      <h3>Model Optimizer</h3>
+      <p><strong>Optimizer:</strong> Adam</p>
+  </section>
+  
+
+		
+		<!-- Video
+		============================ -->
+        <section id="idocs_video">
+          <h2> WebApp Video</h2>
+          <p class="text-4">Explore our web app's functionality through a detailed demonstration video. This video showcases how users can navigate, interact with features, and make the most of the application on various devices.</p> 
+          
+		  <h3 class="mt-5">Embedded Video</h3>
+		  <p> The video below provides an overview of our working web application. It demonstrates the user experience, including login, registration, image uploads, chatbot interactions, and more. The responsive design ensures seamless usability across all devices.</p>
+		  <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xw3OYLcUsSI?si=T7gRT3WerRzaDw52" allowfullscreen></iframe>
+</div>
+          
+        </section>
+        
+		      
+        
+      </div>
+    </div>
+	</div>
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://www.linkedin.com/in/shashank-mishra-546328205/" target="_blank" title="" data-original-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://github.com/nkshash/nkshash" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2024 <a href="https://vita-latest.onrender.com/">Vita</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="https://chic-sherbet-f73d06.netlify.app/">Shashank Mishra</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
